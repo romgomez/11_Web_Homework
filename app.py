@@ -29,7 +29,7 @@ def humidity():
 
 @app.route("/windspeed")
 def windspeed():
-    return render_template("humidity.html")
+    return render_template("windspeed.html")
 
 @app.route("/comparison")
 def comparison():
