@@ -10,32 +10,32 @@ app = Flask(__name__)
 #################################################  
     
 # Renders index page
-@app.route("templates/")
+@app.route("/")
 def index():
     """Return the homepage."""
     return render_template("index.html")
 
-@app.route("templates/cloudiness")
+@app.route("/cloudiness")
 def cloudiness():
     return render_template("cloudiness.html")
     
-@app.route("templates/temperature")
+@app.route("/temperature")
 def temperature():
     return render_template("temperature.html")
 
-@app.route("templates/humidity")
+@app.route("/humidity")
 def humidity():
     return render_template("humidity.html")
 
-@app.route("templates/windspeed")
+@app.route("/windspeed")
 def windspeed():
     return render_template("humidity.html")
 
-@app.route("templates/comparison")
+@app.route("/comparison")
 def comparison():
     return render_template("comparison.html")
 
-@app.route("templates/data")
+@app.route("/data")
 def data():
     return render_template("data.html")
 
